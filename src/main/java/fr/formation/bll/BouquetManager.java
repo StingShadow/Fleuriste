@@ -25,7 +25,7 @@ public class BouquetManager {
 	
 	
 	public void ajoutBouquet(Bouquet f) throws Exception{
-		if (f == null || f.getNom() == null || f.getNom().isBlank())
+		if (f == null || f.getNom() == null || f.getNom().isBlank() || f.getCouleur() == null || f.getInformations() == null || f.getQuantite() <= 0)
 			throw new Exception("Bouquet inconnu");
 		System.out.println(f);
 		dao.add(f);
@@ -33,7 +33,7 @@ public class BouquetManager {
 	
 	public void modifierBouquet(Bouquet f) throws Exception{
 
-		if (f == null || f.getNom() == null || f.getNom().isBlank())
+		if (f == null || f.getNom() == null || f.getNom().isBlank() || f.getCouleur() == null || f.getInformations() == null || f.getQuantite() <= 0)
 			throw new Exception("Bouquet pas correct");
 		dao.update(f);
 	}

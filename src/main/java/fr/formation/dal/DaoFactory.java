@@ -24,11 +24,4 @@ public class DaoFactory {
 		return new PlanteDAOImpl();
 	}
 	
-	public static PanierDAO getPanierDAO() {
-		return new PanierDAOImpl();
-	}
-
-	public static LignePanierDAO getLignePanierDAO() {
-		return new LignePanierDAOImpl();
-	}
 }

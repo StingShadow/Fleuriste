@@ -15,7 +15,7 @@ function afficherPlantes(plantes) {
 	var data = "";
 	$("#nbPlantes").html(plantes.length);
 	plantes.forEach(function(f) {
-		var affichage = "<div class='card column' style='width: 18rem;'>"
+		var affichage = "<div class='card column bg-softrose' style='width: 18rem;'>" 
 			url = "./css/plantes.jpg";
 			affichage += "<img class='card-img-top' style='width:250px; height:250px;' src='"+ f.url+"' alt=''>"
 			affichage += "<div class='card-body'>"

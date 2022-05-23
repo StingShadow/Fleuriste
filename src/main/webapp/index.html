@@ -7,69 +7,129 @@
 <title>Insert title her</title>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/0883af4e08.js" crossorigin="anonymous"></script>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/0883af4e08.js"
+	crossorigin="anonymous"></script>
 
 </head>
 
 <style>
+body {
+	background-image: url("./css/fond.png");
+	background-repeat: no-repeat;
+	margin: 1%;
+	background-size: cover; /* version standardisée */
+}
 
-	body{
-		background-image: url("./css/fond.png");
-		background-repeat: no-repeat;
-		margin:1%;
-  		background-size: cover; /* version standardisée */
-	}
+.bg-rose {
+	background-color : rgb(255,105,180);
+}
 
+.bg-softrose {
+	background-color : 	rgb(255,182,193);
+}
 </style>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-danger-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"> <img src="./css/flower.png"
-				alt="" width="40" height="40" class="d-inline-block align-text-top">
-				<span>Asche Blume</span>
+	<nav class="navbar navbar-expand-lg navbar-light bg-danger-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html"> <img
+				src="./css/flower.png" alt="" width="40" height="40"
+				class="d-inline-block align-text-top"> <span>Asche
+					Blume</span>
 			</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse navbar-end" style="padding-left: 1100px;" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-        <a class="nav-link" href="afficheBouquet.html">Bouquets</a>
-        <a class="nav-link" href="afficheFleur.html">Fleurs</a>
-        <a class="nav-link" href="affichePlante.html">Plantes</a>
-         <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Gestion
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item" href="plante.html">Plantes</a></li>
-            <li><a class="dropdown-item" href="fleur.html">Fleurs</a></li>
-            <li><a class="dropdown-item" href="bouquet.html">Bouquets</a></li>
-             <li><hr class="dropdown-divider"></li>
-             <li><a class="dropdown-item" href="saison.html">Saisons</a></li>
-             <li><hr class="dropdown-divider"></li>
-             <li><a class="dropdown-item" href="styles.html">Styles</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-     <a class="nav-link active" aria-current="page" href="#">Panier</a>
-      </div>
-    
-    </div>
-  </div>
-</nav>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse navbar-end"
+				style="padding-left: 1100px;" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+					<a class="nav-link" href="afficheBouquet.html">Bouquets</a> <a
+						class="nav-link" href="afficheFleur.html">Fleurs</a> <a
+						class="nav-link" href="affichePlante.html">Plantes</a>
+					<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown"><a
+								class="nav-link dropdown-toggle" href="#"
+								id="navbarDarkDropdownMenuLink" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false"> Gestion </a>
+								<ul class="dropdown-menu bg-softrose"
+									aria-labelledby="navbarDarkDropdownMenuLink">
+									<li><a class="dropdown-item bg-softrose" href="plante.html">Plantes</a></li>
+									<li><a class="dropdown-item" href="fleur.html">Fleurs</a></li>
+									<li><a class="dropdown-item" href="bouquet.html">Bouquets</a></li>
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item" href="saison.html">Saisons</a></li>
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item" href="styles.html">Styles</a></li>
+								</ul></li>
+						</ul>
+					</div>
+					<a class="nav-link active" aria-current="page" href="#">Panier</a>
+				</div>
+
+			</div>
+		</div>
+	</nav>
 
 
 
-<div class="container mt-5 text-center pb-5">
+	<div class="container mt-5 text-center pb-5">
 
-<img src="./css/Asche_Blume2.png" class="img-fluid pt-3" style="border-radius:50%;  width:400px; height:400px"  alt="...">
+		<img src="./css/Asche_Blume2.png" class="img-fluid pt-3"
+			style="border-radius: 50%; width: 400px; height: 400px" alt="...">
 
-<h3 class="pt-5">Vous découvrirez ici des espèces nouvelles et exotiques ! Chercher dans nos rayons ! Allez hop hop !</h3></div>
+		<h3 class="pt-5">Vous découvrirez ici des espèces nouvelles et
+			exotiques ! Chercher dans nos rayons ! Allez hop hop !</h3>
+	</div>
+
+	<div class="container">
+		<div class="row align-items-start">
+			<div class="col">
+				<div class="card">
+					<div class="card-header bg-rose">Par Téléphone</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item bg-softrose">Du lundi au mardi de 9h00 a 9h01</li>
+						<li class="list-group-item bg-softrose">06.69.66.62.96</li>
+						<li class="list-group-item bg-softrose">Pas de méssage sur répondeur</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="col">
+				<div class="card">
+					<div class="card-header bg-rose">Par Mail ou courrier</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item bg-softrose">Asche Blume Compagnie</li>
+						<li class="list-group-item bg-softrose">5 rue des potiers, 69000 Ville
+							des potiers</li>
+						<li class="list-group-item bg-softrose">Asche-Blume@Compagnie.fr</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<div class="card-header bg-rose">Par réseaux</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item bg-softrose">Nous n'y somme pas</li>
+						<li class="list-group-item bg-softrose">Merci a vous</li>
+						<li class="list-group-item bg-softrose">Achetez en quantité, faite vivre les producteurs</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
 </body>
